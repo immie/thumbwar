@@ -6,29 +6,29 @@ Thumb War is a totally awesome JavaScript-based video game platform. Think Mario
 
 ### Matchmaking
 
-Players enter a name and are automatically paired with other players waiting to play.
+Players enter a name (or have one generated for them) and are automatically paired with others players waiting to play. 
 
-### Metagames
+### Metagame
 
-The Metagame tracks the overall "score" of a party as they play a series of Minigames. The default Metagame is just a simple scoreboard, but Metagames can be written to do all kinds of cool things!
+The metagame tracks the overall "score" of a party as they play a series of minigames. After each minigame, the metagame takes control and displays current score, as well as the upcoming game and its instructions.
 
 ### Minigames
 
-Minigames include the following properties:
-
-* **platform:** Limit this game to specific platforms. Accepted values are 'mobile', 'web', and 'all'. *(default: all)*
-* **min\_players:** Minimum number of players required for this game. *(default: 2)*
-* **max\_players:** Maximum number of players allowed for this game. *(default: 4)*
-* **async:** Allow this game to be played regardless of any lag. *(default: false)*
-* **max_lag:** Maximum allowed lag to play this game. *(default: 500)*
-* **physical\_proximity\_required:** Require users to play in the same physical location. *(default: false)*
+Minigames can be modularly written to take total control of the screen of all of the players, and simply report back to the metagame when a gameover has occured (as well as the scores of each player).
 
 ## How to run for development
 
 * sudo npm install -g supervisor
 * sudo npm install -g coffee-script
+* sudo npm install
 * sudo supervisor app.coffee
 * coffee -c -w assets/
+* point your browser to localhost
+
+## Todo
+
+* End game condition with final scores
+* More games!
 
 ## Credits
 Built by [@rofreg](http://twitter.com/rofreg), [@lizneu08](http://twitter.com/lizneu08), and [@kyletns](http://twitter.com/kyletns) for the [DowncityJS hackathon](http://downcityjs.com), February 2-3.
