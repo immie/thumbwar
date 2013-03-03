@@ -10,11 +10,11 @@ Players enter a name (or have one generated for them) and are automatically pair
 
 ### Metagame
 
-The metagame tracks the overall "score" of a party as they play a series of minigames. After each minigame, the metagame takes control and displays current score, as well as the upcoming game and its instructions.
+The metagame tracks the overall "score" of a party as they play a series of minigames. Screen control is handed off between the metagame and each miniagme. After each minigame, the metagame displays the current score, as well as the upcoming game and its instructions.
 
 ### Minigames
 
-Minigames can be modularly written to take total control of the screen of all of the players, and simply report back to the metagame when a gameover has occured (as well as the scores of each player).
+Minigames can be modularly written to take total control of the screen of all of the players, and have total freedom as to gameplay / teams / cooperative vs. competitive aspects. We just want some great short games in here! Each minigame simply reports back to the metagame when a gameover has occured (as well as the scores of each player).
 
 ## How to run for development
 
