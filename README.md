@@ -1,6 +1,6 @@
 # Thumb War
 
-Thumb War is a totally awesome JavaScript-based video game platform. Think Mario Party for mobile.
+Thumb War is a totally awesome JavaScript-based video game platform. Get some friends together, hop on at thumbwar.me, and start playing! Think Mario Party for mobile.
 
 ## How it works
 
